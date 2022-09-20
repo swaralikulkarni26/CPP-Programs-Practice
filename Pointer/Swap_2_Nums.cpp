@@ -9,8 +9,6 @@ cout<<"Before swap "<<*p1<<*p2<<endl;
     *p1=*p1-*p2;
     cout<<"After swap "<<*p1<<*p2<<endl;
 
-
-
     return 0;
 }
 /* Before swap 1020
