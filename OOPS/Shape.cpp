@@ -30,24 +30,27 @@ public:
 int main()
 
 {
-    int length, breadth, height;
-    cout << "Enter the length, breadth, height:" << endl;
-
-    cin >> length >> breadth >> height;
+    int length, breadth, height, base;
     Triangle t;
-    t.getData(length, height);
+    cout<<"Enter base and height of triangle: "<<endl;
+    cin>>base>>height;
+    t.getData(base, height);
     float triArea = t.triArea();
     cout << "Area of Triangle is : " << triArea << endl;
     Rectangle r;
+    cout<<"Enter length and breadth of Rectangle: "<<endl;
+    cin>>length>>breadth;
     r.getData(length, breadth);
     float rectArea = r.rectArea();
     cout << "Area of rctangle is : " << rectArea << endl;
 
     return 0;
 }
-/*Enter the length, breadth, height:
+/*Enter base and height of triangle: 
 10
 20
-30
-Area of Triangle is : 150
+Area of Triangle is : 100
+Enter length and breadth of Rectangle:
+10
+20
 Area of rctangle is : 200*/
